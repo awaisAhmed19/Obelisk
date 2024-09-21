@@ -1,0 +1,37 @@
+.section-1-container {
+	padding: 5rem 0;
+}
+
+.section1-text-title {
+	font-weight: 600;
+}
+.section1-text-container {
+	padding: 3rem 0;
+}
+.section1-text-small,
+.section1-text-title {
+	padding: 0 2rem;
+}
+.section1-description-container {
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 1;
+	justify-content: space-around;
+	margin: 2rem 0;
+}
+
+.section1-desciptions {
+	width: 33%;
+	height: fit-content;
+	margin: 0 1rem;
+	padding: 0 1rem;
+}
+
+.section1-icon {
+	height: 2.2rem;
+	width: 2.2rem;
+}
+
+.section1-desciptions-heading {
+	margin-top: 0;
+}

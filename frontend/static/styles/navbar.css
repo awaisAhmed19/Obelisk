@@ -1,0 +1,81 @@
+nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	color: whitesmoke;
+	width: 100vw;
+	height: max-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+.title-container {
+	margin: 0 2.5rem;
+	padding: 0.625rem;
+	flex: 1;
+}
+
+.title {
+	cursor: default;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: whitesmoke;
+	font-weight: 600;
+	white-space: nowrap;
+	/* color: whitesmoke; */
+}
+
+.link-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex: 10;
+	padding: 0, 0.625rem;
+}
+
+.page-links {
+	display: flex;
+	list-style: none;
+}
+.page-links-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.625rem;
+	/* margin: 0 0.625rem; */
+	cursor: default;
+}
+
+.page-links-list a {
+	cursor: default;
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 0 0.625rem;
+	/* margin: 0 2rem; */
+}
+
+.navbar-button-container {
+	display: flex;
+	margin: 0 2.5rem;
+	padding: 0.625rem;
+}
+
+.navbar-shipping-button {
+	background-color: whitesmoke;
+	text-decoration: none;
+	border-radius: 1.625rem;
+	border: none;
+	color: black;
+	font-weight: 600;
+	padding: 0.4rem 0.725rem;
+}
+
+.navbar-shipping-button:hover {
+	background-color: rgb(210, 210, 210);
+	color: black;
+	cursor: default;
+}

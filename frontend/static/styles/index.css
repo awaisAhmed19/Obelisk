@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(208, 208, 208);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.main-body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
