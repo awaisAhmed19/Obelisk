@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,123 +24,37 @@
 	</head>
 	<body>
 		<nav>
-			<div class="title-container">
-				<a href="/" class="title">Obelisk Shipping</a>
-			</div>
-			<div class="link-container">
-				<ul class="page-links">
-					<li
-						class="page-links-list"
-						hx-get="services_list.html"
-						hx-target="#services_list"
-						hx-swap="innerHTML"
-						onmouseenter="{dropdown()}"
-						onmouseleave="{dropdown()}"
-						onclick="{dropdown()}"
-					>
-						Services
-					</li>
-					<div id="services_list" class="services-list-container"></div>
-					<li class="page-links-list"><a href="/resources">Resources</a></li>
-					<li class="page-links-list"><a href="/about_us">About Us</a></li>
-					<li class="page-links-list"><a href="/support">Support</a></li>
-				</ul>
-			</div>
-			<div class="navbar-button-container">
-				<a href="/shipping" class="navbar-shipping-button">Ship With Us</a>
+			<div class="nav-container">
+				<div class="title-container">
+					<a href="/" class="title">Obelisk Shipping</a>
+				</div>
+				<div class="link-container">
+					<ul class="page-links">
+						<li
+							class="page-links-list"
+							hx-get="services_list.html"
+							hx-target="#services_list"
+							hx-swap="innerHTML"
+							onmouseenter="{dropdown()}"
+							onmouseleave="{dropdown()}"
+							onclick="{dropdown()}"
+						>
+							Services
+						</li>
+						<div id="services_list" class="services-list-container"></div>
+						<li class="page-links-list"><a href="/resources">Resources</a></li>
+						<li class="page-links-list"><a href="/about_us">About Us</a></li>
+						<li class="page-links-list"><a href="/support">Support</a></li>
+					</ul>
+				</div>
+				<div class="navbar-button-container">
+					<a href="/shipping" class="navbar-shipping-button">Ship With Us</a>
+				</div>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 		</nav>
-		<main class="main-body">
-			<div class="desktop-Vid">
-				<div class="overlay"></div>
-				<video
-					src="{{ url_for('static', filename='Assets/background-desktop-ship-vid.mp4') }}"
-					autoplay
-					loop
-					muted
-				></video>
-				<div class="content-container">
-					<h1 class="hero-text-title">
-						Enhance your
-						<br role="presentation" />
-						business with us
-					</h1>
-					<p class="hero-text-small">
-						Wield the power of cutting-edge technology and global logistics,
-						<br role="presentation" />
-						designed to deliver success for your business.
-					</p>
-					<div class="button-container">
-						<a href="/shipping" class="shipping-button">Ship With Us</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="section-1-container">
-				<div class="section1-text-container">
-					<h1 class="section1-text-title">
-						Obelisk Shipping, an end-to-end logistics solution enhancing supply
-						chains and movement of goods. Seamless operational efficiency for
-						our clients.
-					</h1>
-					<p class="section1-text-small">
-						Our commitment to operational excellence drives us to build strong
-						partnerships and optimize logistics processes at every stage. With a
-						focus on reliability and efficiency, Obelisk Shipping empowers
-						businesses to navigate the complexities of global trade, ensuring
-						timely delivery and exceptional service. Whether you require air
-						freight, sea freight, land transport, or expert customs clearance,
-						we are dedicated to facilitating smooth supply chain operations that
-						keep your business moving forward.
-					</p>
-				</div>
-
-				<div class="section1-description-container">
-					<span class="section1-desciptions">
-						<img
-							class="section1-icon"
-							src="{{url_for('static',filename='Assets/logistic-trolley.png')}}"
-						/>
-						<h2 class="section1-desciptions-heading">
-							Streamline logistics with real-time insights
-						</h2>
-						<p class="section1-desciptions-para">
-							Our network provides constant monitoring across air, sea, and land
-							routes, giving you up-to-the-minute data to optimize shipping,
-							enhance visibility, and make quick, informed decisions.
-						</p>
-					</span>
-					<span class="section1-desciptions">
-						<img
-							class="section1-icon"
-							src="{{url_for('static',filename='Assets/logistics-icon.png')}}"
-						/>
-						<h2 class="section1-desciptions-heading">
-							Maximize operational efficiency
-						</h2>
-						<p class="section1-desciptions-para">
-							Whether it’s managing capacity or streamlining costs, our
-							comprehensive solutions cover all your needs—be it air freight,
-							sea freight, or ground transportation—keeping your logistics on
-							track.
-						</p>
-					</span>
-					<span class="section1-desciptions">
-						<img
-							class="section1-icon"
-							src="{{url_for('static',filename='Assets/tracking_.png')}}"
-						/>
-						<h2 class="section1-desciptions-heading">
-							Leverage expert guidance
-						</h2>
-						<p class="section1-desciptions-para">
-							With decades of logistics experience and deep expertise in global
-							shipping, our team is here to guide you through every step,
-							ensuring smooth operations and efficient customs clearance.
-						</p>
-					</span>
-				</div>
-			</div>
-		</main>
 	</body>
 </html>

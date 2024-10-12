@@ -62,3 +62,15 @@ video {
 	color: black;
 	cursor: default;
 }
+
+@media (max-width: 768px) {
+	.hero-text-title {
+		font-size: 2.5rem;
+	}
+	.hero-text-small {
+		font-size: 1rem;
+	}
+	.shipping-button {
+		padding: 0.3rem 0.6rem;
+	}
+}

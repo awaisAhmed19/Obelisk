@@ -35,3 +35,25 @@
 .section1-desciptions-heading {
 	margin-top: 0;
 }
+
+/* -----------------------Section -2------------------------------ */
+
+.section-2-container {
+	display: flex;
+	padding: 1rem;
+	flex-wrap: wrap;
+	gap: 1.2rem;
+	justify-content: center;
+}
+
+.cards {
+	flex: 1 1 calc(50%-1.2rem);
+	border: none;
+	padding: 1.2rem;
+}
+
+.card-video {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
