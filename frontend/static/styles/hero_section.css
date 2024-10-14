@@ -1,39 +1,26 @@
-.desktop-Vid {
-	margin: 0;
-	padding: 0;
+.hero-container {
 	width: 100vw;
 	height: 85vh;
+	margin: 0;
+	padding: 0;
 	position: relative;
+	display: flex;
+	justify-content: start;
+	align-items: center;
 }
-video {
+
+.hero-video {
 	width: 100%;
-	max-height: 100%;
+	height: 100%;
 	object-fit: cover;
 	z-index: 1;
 }
-
-.content-container {
-	position: absolute;
+.hero-mobile-video {
+	display: none;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	z-index: 3;
-	display: flex;
-	margin: 0 2rem;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-}
-
-.hero-text-title {
-	font-size: 3.7rem;
-	color: whitesmoke;
-	margin: 0;
-}
-
-.hero-text-small {
-	color: whitesmoke;
-	font-size: 1.12rem;
+	object-fit: cover;
+	z-index: 1;
 }
 
 .overlay {
@@ -43,34 +30,87 @@ video {
 	width: 100%;
 	height: 100%;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
-	/* background-color: rgba(0, 0, 0, 0.3); */
 	z-index: 2;
 }
 
-.shipping-button {
+.content-container {
+	position: absolute;
+	padding: 0 3rem;
+	display: flex;
+	flex-direction: column;
+	z-index: 3;
+	color: whitesmoke;
+}
+
+.button-container {
 	background-color: whitesmoke;
+	max-width: fit-content;
+	padding: 0.5rem 1rem;
+	border-radius: 25rem;
+}
+.button-container:hover {
+	background-color: grey;
+}
+.shipping-button {
 	text-decoration: none;
-	border-radius: 1.625rem;
-	border: none;
 	color: black;
-	font-weight: 600;
-	padding: 0.4rem 0.725rem;
 }
 
-.shipping-button:hover {
-	background-color: rgb(210, 210, 210);
-	color: black;
-	cursor: default;
+@media only screen and (min-width: 600px) and (max-width: 1020px) {
+	.hero-container {
+		width: 100vw;
+		min-height: 85vh;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.hero-video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
+	}
+	h1 {
+		font-size: 3.5em;
+	}
+	p {
+		font-size: 1.25em;
+	}
 }
 
-@media (max-width: 768px) {
-	.hero-text-title {
-		font-size: 2.5rem;
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 1.5em;
 	}
-	.hero-text-small {
-		font-size: 1rem;
+	p {
+		font-size: 1em;
 	}
-	.shipping-button {
-		padding: 0.3rem 0.6rem;
+
+	.overlay {
+		background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.9),
+			transparent
+		);
+	}
+	.hero-container {
+		min-height: 100vh;
+	}
+	.content-container {
+		padding: 0 1.99rem;
+	}
+	.hero-video {
+		display: none;
+	}
+	.hero-mobile-video {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1;
 	}
 }
