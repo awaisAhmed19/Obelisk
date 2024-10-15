@@ -1,5 +1,5 @@
 .services-container {
-	padding: 2rem;
+	padding: 3rem;
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
 	gap: 2rem;
