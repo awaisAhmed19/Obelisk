@@ -28,6 +28,10 @@
 			rel="stylesheet"
 			href="{{ url_for('static', filename='./styles/section3.css') }}"
 		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='./styles/footer.css') }}"
+		/>
 		<script src="https://unpkg.com/htmx.org@1.9.2"></script>
 	</head>
 	<body>
@@ -168,12 +172,10 @@
 
 			<div class="services-container">
 				<div class="service-card">
-					<video
-						src="{{ url_for('static', filename='Assets/air_Frieght.mp4') }}"
-						poster="{{ url_for('static', filename='Assets/airplane_thumbnail.jpg') }}"
-						muted
-						loop
-					></video>
+					<img
+						src="{{ url_for('static', filename='Assets/airplane_thumbnail.jpg') }}"
+						alt="Airplane"
+					/>
 					<div class="service-card-text">
 						<h1>Air Freight</h1>
 						<p>
@@ -187,12 +189,10 @@
 					</div>
 				</div>
 				<div class="service-card">
-					<video
-						src="{{ url_for('static', filename='Assets/sea_Freight.mp4') }}"
-						poster="{{ url_for('static', filename='Assets/ship_thumbnail.jpg') }}"
-						muted
-						loop
-					></video>
+					<img
+						src="{{ url_for('static', filename='Assets/ship_thumbnail.jpg') }}"
+						alt="ship"
+					/>
 					<div class="service-card-text">
 						<h1>Sea Freight</h1>
 						<p>
@@ -206,12 +206,10 @@
 					</div>
 				</div>
 				<div class="service-card">
-					<video
-						src="{{ url_for('static', filename='Assets/truck.mp4') }}"
-						poster="{{ url_for('static', filename='Assets/land_thumbnail.jpg') }}"
-						muted
-						loop
-					></video>
+					<img
+						src="{{ url_for('static', filename='Assets/land_thumbnail.jpg') }}"
+						alt="land_freight"
+					/>
 					<div class="service-card-text">
 						<h1>Land Freight</h1>
 						<p>
@@ -225,12 +223,10 @@
 					</div>
 				</div>
 				<div class="service-card">
-					<video
-						src="{{ url_for('static', filename='Assets/Custom_clearance_vid.mp4') }}"
-						poster="{{ url_for('static', filename='Assets/Custom_clearance.jpg') }}"
-						muted
-						loop
-					></video>
+					<img
+						src="{{ url_for('static', filename='Assets/Custom_clearance.jpg') }}"
+						alt="custom_clearance"
+					/>
 					<div class="service-card-text">
 						<h1>Custom Clearance</h1>
 						<p>
@@ -244,6 +240,8 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="spacing"></div>
 			<div class="section-3">
 				<div class="section-cards-left">
 					<div class="card-text">
@@ -309,6 +307,35 @@
 					</div>
 				</div>
 			</div>
+			<footer>
+				<div class="footer-container">
+					<div class="footer-title">
+						<a href="/">Obelisk Shipping</a>
+					</div>
+					<div class="footer-services">
+						<p>Services</p>
+						<a href="/Resources">Resources</a>
+						<a href="/About Us">About Us</a>
+						<a href="/Support">Support</a>
+					</div>
+					<div class="Services-list">
+						<a href="/air_freight">Air Freight</a>
+						<a href="/sea_freight">Sea Freight</a>
+						<a href="/land_freight">Land Freight</a>
+						<a href="/custom_clearance">Custom Clearance/a>
+					</div>
+					<div class="social-media">
+						<i></i>
+						<i></i>
+						<i></i>
+						<i></i>
+					</div>
+					<div class="footer-copyright">
+						<p>&copy; <span id="year"></span> Obelisk Shipping</p>
+					</div>
+				</div>
+			</footer>
 		</main>
+		
 	</body>
 </html>

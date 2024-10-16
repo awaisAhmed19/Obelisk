@@ -1,11 +1,11 @@
 .services-container {
-	padding: 3rem;
+	padding: 2rem;
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
 	gap: 2rem;
 	row-gap: 4rem;
 }
-.service-card video {
+.service-card img {
 	width: 100%;
 }
 .service-card {
