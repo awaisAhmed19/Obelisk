@@ -313,29 +313,62 @@
 						<a href="/">Obelisk Shipping</a>
 					</div>
 					<div class="footer-services">
-						<p>Services</p>
-						<a href="/Resources">Resources</a>
-						<a href="/About Us">About Us</a>
-						<a href="/Support">Support</a>
+						<ul>
+							<p>Services</p>
+							<li>
+								<a href="/Resources">Resources</a>
+							</li>
+							<li>
+								<a href="/About Us">About Us</a>
+							</li>
+							<li>
+								<a href="/Support">Support</a>
+							</li>
+						</ul>
 					</div>
 					<div class="Services-list">
 						<a href="/air_freight">Air Freight</a>
 						<a href="/sea_freight">Sea Freight</a>
 						<a href="/land_freight">Land Freight</a>
-						<a href="/custom_clearance">Custom Clearance/a>
+						<a href="/custom_clearance">Custom Clearance</a>
 					</div>
 					<div class="social-media">
-						<i></i>
-						<i></i>
-						<i></i>
-						<i></i>
+						<i>
+							<svg width="24" height="24">
+								<use
+									href="{{ url_for('static', filename='Assets/icons/icons8-facebook.svg') }}"
+								></use>
+							</svg>
+						</i>
+						<i>
+							<svg width="24" height="24">
+								<use
+									href="{{ url_for('static', filename='Assets/icons/icons-instagram.svg') }}"
+								></use>
+							</svg>
+						</i>
+						<i>
+							<svg width="24" height="24">
+								<use
+									href="{{ url_for('static', filename='Assets/icons/icons8-linkedin.svg') }}"
+								></use>
+							</svg>
+						</i>
+						<i>
+							<svg width="24" height="24">
+								<use
+									href="{{ url_for('static', filename='Assets/icons/icons8-twitterx.svg') }}"
+								></use>
+							</svg>
+						</i>
 					</div>
+
 					<div class="footer-copyright">
 						<p>&copy; <span id="year"></span> Obelisk Shipping</p>
 					</div>
 				</div>
 			</footer>
 		</main>
-		
+		<script src="{{url_for('static',filename='js/index.js')}}"></script>
 	</body>
 </html>
