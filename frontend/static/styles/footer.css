@@ -91,3 +91,30 @@ footer {
 .footer-copyright {
 	cursor: default;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1020px) {
+}
+
+@media only screen and (max-width: 600px) {
+	.Services-list {
+		display: none;
+	}
+	.footer-services ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		row-gap: 1rem;
+	}
+	.Services-mobile-list {
+		margin-top: 0;
+		margin-bottom: 0.8rem;
+	}
+	.Services-mobile-list ul {
+		display: flex;
+		margin: 0;
+		flex-direction: column;
+		row-gap: 10px;
+		white-space: nowrap;
+		align-items: start;
+	}
+}

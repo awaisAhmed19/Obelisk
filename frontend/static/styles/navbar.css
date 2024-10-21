@@ -44,7 +44,8 @@ nav {
 /* shipping button */
 .navbar-button-container {
 	background-color: whitesmoke;
-	height: 75%;
+	max-width: max-content;
+	min-height: max-content;
 	display: flex;
 	align-items: center;
 	justify-content: center;

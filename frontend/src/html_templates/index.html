@@ -5,6 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Oblisk Shipping</title>
 		<link
+			rel="icon"
+			href="{{ url_for('static', filename='Assets/icons/favicon.png') }}"
+			type="image/x-icon"
+		/>
+
+		<link
 			rel="stylesheet"
 			href="{{ url_for('static', filename='./styles/index.css') }}"
 		/>
@@ -314,7 +320,16 @@
 					</div>
 					<div class="footer-services">
 						<ul>
-							<p>Services</p>
+							<p
+								id="service-button"
+								hx-get="services_list.html"
+								hx-trigger="click"
+								hx-target="#service_footer_list"
+								hx-swap="toggle"
+							>
+								Services
+							</p>
+							<div id="service_footer_list" class="Services-mobile-list"></div>
 							<li>
 								<a href="/Resources">Resources</a>
 							</li>
