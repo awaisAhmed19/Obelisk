@@ -5,6 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Oblisk Shipping</title>
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+
+		<link
 			rel="icon"
 			href="{{ url_for('static', filename='Assets/icons/favicon.png') }}"
 			type="image/x-icon"
@@ -48,25 +53,33 @@
 				</div>
 				<div class="link-container">
 					<ul class="page-links">
-						<li
-							class="page-links-list"
-							hx-get="services_list.html"
-							hx-target="#services_list"
-							hx-swap="innerHTML"
-							onmouseenter="{dropdown()}"
-							onmouseleave="{dropdown()}"
-							onclick="{dropdown()}"
-						>
-							Services
-						</li>
-						<div id="services_list" class="services-list-container"></div>
+						<li id="link-button" class="page-links-list">Services</li>
+						<div id="services_list" class="services-list-container">
+							<ul class="services-list">
+								<li class="services-list-links">
+									<a href="/air_freight">Air Freight</a>
+								</li>
+								<li class="services-list-links">
+									<a href="/land_freight">Land Freight</a>
+								</li>
+								<li class="services-list-links">
+									<a href="/sea_freight">Sea Freight</a>
+								</li>
+								<li class="services-list-links">
+									<a href="/custom_clearence">Custom Clearence</a>
+								</li>
+							</ul>
+						</div>
+
 						<li class="page-links-list"><a href="/resources">Resources</a></li>
 						<li class="page-links-list"><a href="/about_us">About Us</a></li>
 						<li class="page-links-list"><a href="/support">Support</a></li>
 					</ul>
 				</div>
 				<div class="navbar-button-container">
-					<a href="/shipping" class="navbar-shipping-button">Ship With Us</a>
+					<a href="mailto:gm@obeliskshipping.com" class="navbar-shipping-button"
+						>Ship With Us</a
+					>
 				</div>
 				<div class="hamburger">
 					<span></span>
@@ -347,37 +360,36 @@
 						<a href="/land_freight">Land Freight</a>
 						<a href="/custom_clearance">Custom Clearance</a>
 					</div>
-					<div class="social-media">
-						<i>
-							<svg width="24" height="24">
-								<use
-									href="{{ url_for('static', filename='Assets/icons/icons8-facebook.svg') }}"
-								></use>
-							</svg>
-						</i>
-						<i>
-							<svg width="24" height="24">
-								<use
-									href="{{ url_for('static', filename='Assets/icons/icons-instagram.svg') }}"
-								></use>
-							</svg>
-						</i>
-						<i>
-							<svg width="24" height="24">
-								<use
-									href="{{ url_for('static', filename='Assets/icons/icons8-linkedin.svg') }}"
-								></use>
-							</svg>
-						</i>
-						<i>
-							<svg width="24" height="24">
-								<use
-									href="{{ url_for('static', filename='Assets/icons/icons8-twitterx.svg') }}"
-								></use>
-							</svg>
-						</i>
+					<div class="social-media-icons">
+						<a href="https://www.facebook.com" target="_blank">
+							<img
+								src="{{ url_for('static', filename='Assets/icons/icons8-facebook.png') }}"
+								alt="Facebook"
+								width="30"
+							/>
+						</a>
+						<a href="https://www.twitter.com" target="_blank">
+							<img
+								src="{{ url_for('static', filename='Assets/icons/icons8-twitterx.png') }}"
+								alt="Facebook"
+								width="30"
+							/>
+						</a>
+						<a href="https://www.linkedin.com" target="_blank">
+							<img
+								src="{{ url_for('static', filename='Assets/icons/icons8-linkedin.png') }}"
+								alt="Facebook"
+								width="30"
+							/>
+						</a>
+						<a href="https://www.instagram.com" target="_blank">
+							<img
+								src="{{ url_for('static', filename='Assets/icons/icons8-instagram.png') }}"
+								alt="Facebook"
+								width="30"
+							/>
+						</a>
 					</div>
-
 					<div class="footer-copyright">
 						<p>&copy; <span id="year"></span> Obelisk Shipping</p>
 					</div>
