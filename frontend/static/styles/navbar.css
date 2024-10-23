@@ -177,7 +177,7 @@ nav {
 		white-space: nowrap;
 	}
 	.link-container {
-		display: flex;
+		display: none;
 		position: absolute;
 		background-color: rgba(0, 0, 0, 0.9);
 		top: 10vh;
@@ -185,6 +185,9 @@ nav {
 		right: 0;
 		min-width: 50vw;
 		min-height: 100vh;
+	}
+	.link-container.active {
+		display: flex;
 	}
 	.link-container ul {
 		display: flex;
@@ -281,7 +284,7 @@ nav {
 		white-space: nowrap;
 	}
 	.link-container {
-		display: flex;
+		display: none;
 		position: absolute;
 		background-color: rgba(0, 0, 0, 0.9);
 		top: 10vh;
@@ -290,6 +293,9 @@ nav {
 		left: 0;
 		min-width: 100vw;
 		min-height: 100vh;
+	}
+	.link-container.active {
+		display: flex;
 	}
 	.link-container ul {
 		display: flex;

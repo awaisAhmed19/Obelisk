@@ -1,11 +1,12 @@
 // Navbar logic for service buttons
 const page_Link = document.getElementById("link-button");
 const service_list = document.getElementById("services_list");
+const linkContainer = document.getElementById("links-container-id");
+const hamburger = document.getElementById("hamburger-button");
 
 // Function to toggle dropdown visibility
 function toggleDropdown(e) {
 	e.preventDefault();
-	// Toggle the dropdown visibility
 	service_list.classList.toggle("show");
 }
 
@@ -31,7 +32,15 @@ service_list.addEventListener("mouseleave", () => {
 	service_list.classList.remove("show");
 });
 
+//mobile controls
+function toggle_ham(e) {
+	e.preventDefault();
+	hamburger.classList.toggle("active");
+	linkContainer.classList.toggle("active");
+}
+
 // Toggle dropdown on click
+hamburger.addEventListener("click", toggle_ham);
 page_Link.addEventListener("click", toggleDropdown);
 
 // Copy right time block
