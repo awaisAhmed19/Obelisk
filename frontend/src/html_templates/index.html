@@ -57,23 +57,27 @@
 						<div id="services_list" class="services-list-container">
 							<ul class="services-list">
 								<li class="services-list-links">
-									<a href="/air_freight">Air Freight</a>
+									<a href="/air_freight.html">Air Freight</a>
 								</li>
 								<li class="services-list-links">
-									<a href="/land_freight">Land Freight</a>
+									<a href="/land_freight.html">Land Freight</a>
 								</li>
 								<li class="services-list-links">
-									<a href="/sea_freight">Sea Freight</a>
+									<a href="/sea_freight.html">Sea Freight</a>
 								</li>
 								<li class="services-list-links">
-									<a href="/custom_clearence">Custom Clearence</a>
+									<a href="/custom_clearence.html">Custom Clearence</a>
 								</li>
 							</ul>
 						</div>
 
-						<li class="page-links-list"><a href="/resources">Resources</a></li>
-						<li class="page-links-list"><a href="/about_us">About Us</a></li>
-						<li class="page-links-list"><a href="/support">Support</a></li>
+						<li class="page-links-list">
+							<a href="/resources.html">Resources</a>
+						</li>
+						<li class="page-links-list">
+							<a href="/about_us.html">About Us</a>
+						</li>
+						<li class="page-links-list"><a href="/support.html">Support</a></li>
 					</ul>
 				</div>
 				<div class="navbar-button-container">
@@ -204,7 +208,7 @@
 							high-value goods. Trust us for seamless transport solutions that
 							keep your business moving.
 						</p>
-						<a href="/air_freight">Tell me more</a>
+						<a href="/air_freight.html">Tell me more</a>
 					</div>
 				</div>
 				<div class="service-card">
@@ -221,7 +225,7 @@
 							expert care. Count on us to navigate customs efficiently and
 							deliver your goods worldwide.
 						</p>
-						<a href="/sea_freight">Tell me more</a>
+						<a href="/sea_freight.html">Tell me more</a>
 					</div>
 				</div>
 				<div class="service-card">
@@ -238,7 +242,7 @@
 							road freight solutions to last-mile delivery, we meet your
 							logistics needs.
 						</p>
-						<a href="/land_freight">Tell me more</a>
+						<a href="/land_freight.html">Tell me more</a>
 					</div>
 				</div>
 				<div class="service-card">
@@ -255,7 +259,7 @@
 							on your core business while we ensure smooth customs processes for
 							your shipments.
 						</p>
-						<a href="/custom_clearance">Tell me more</a>
+						<a href="/custom_clearance.html">Tell me more</a>
 					</div>
 				</div>
 			</div>
@@ -326,76 +330,73 @@
 					</div>
 				</div>
 			</div>
-			<footer>
-				<div class="footer-container">
-					<div class="footer-title">
-						<a href="/">Obelisk Shipping</a>
-					</div>
-					<div class="footer-services">
-						<ul>
-							<p
-								id="service-button"
-								hx-get="services_list.html"
-								hx-trigger="click"
-								hx-target="#service_footer_list"
-								hx-swap="toggle"
-							>
-								Services
-							</p>
-							<div id="service_footer_list" class="Services-mobile-list"></div>
-							<li>
-								<a href="/Resources">Resources</a>
-							</li>
-							<li>
-								<a href="/About Us">About Us</a>
-							</li>
-							<li>
-								<a href="/Support">Support</a>
-							</li>
-						</ul>
-					</div>
-					<div class="Services-list">
-						<a href="/air_freight">Air Freight</a>
-						<a href="/sea_freight">Sea Freight</a>
-						<a href="/land_freight">Land Freight</a>
-						<a href="/custom_clearance">Custom Clearance</a>
-					</div>
-					<div class="social-media-icons">
-						<a href="https://www.facebook.com" target="_blank">
-							<img
-								src="{{ url_for('static', filename='Assets/icons/icons8-facebook.png') }}"
-								alt="Facebook"
-								width="30"
-							/>
-						</a>
-						<a href="https://www.twitter.com" target="_blank">
-							<img
-								src="{{ url_for('static', filename='Assets/icons/icons8-twitterx.png') }}"
-								alt="Facebook"
-								width="30"
-							/>
-						</a>
-						<a href="https://www.linkedin.com" target="_blank">
-							<img
-								src="{{ url_for('static', filename='Assets/icons/icons8-linkedin.png') }}"
-								alt="Facebook"
-								width="30"
-							/>
-						</a>
-						<a href="https://www.instagram.com" target="_blank">
-							<img
-								src="{{ url_for('static', filename='Assets/icons/icons8-instagram.png') }}"
-								alt="Facebook"
-								width="30"
-							/>
-						</a>
-					</div>
-					<div class="footer-copyright">
-						<p>&copy; <span id="year"></span> Obelisk Shipping</p>
-					</div>
-				</div>
-			</footer>
 		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-title">
+					<a href="/">Obelisk Shipping</a>
+				</div>
+				<div class="footer-services">
+					<ul>
+						<p id="service-footer-button">Services</p>
+						<div id="service_list_mobile" class="services-list-mobile">
+							<a href="/air_freight.html">Air Freight</a>
+							<a href="/sea_freight.html">Sea Freight</a>
+							<a href="/land_freight.html">Land Freight</a>
+							<a href="/custom_clearance.html">Custom Clearance</a>
+						</div>
+						<li>
+							<a href="/resources.html">Resources</a>
+						</li>
+						<li>
+							<a href="/about Us.html">About Us</a>
+						</li>
+						<li>
+							<a href="/support.html">Support</a>
+						</li>
+					</ul>
+				</div>
+				<div class="services-footer-list">
+					<a href="/air_freight.html">Air Freight</a>
+					<a href="/sea_freight.html">Sea Freight</a>
+					<a href="/land_freight.html">Land Freight</a>
+					<a href="/custom_clearance.html">Custom Clearance</a>
+				</div>
+				<div class="social-media-icons">
+					<a href="https://www.facebook.com" target="_blank">
+						<img
+							src="{{ url_for('static', filename='Assets/icons/icons8-facebook.png') }}"
+							alt="Facebook"
+							width="30"
+						/>
+					</a>
+					<a href="https://www.twitter.com" target="_blank">
+						<img
+							src="{{ url_for('static', filename='Assets/icons/icons8-twitterx.png') }}"
+							alt="Facebook"
+							width="30"
+						/>
+					</a>
+					<a href="https://www.linkedin.com" target="_blank">
+						<img
+							src="{{ url_for('static', filename='Assets/icons/icons8-linkedin.png') }}"
+							alt="Facebook"
+							width="30"
+						/>
+					</a>
+					<a href="https://www.instagram.com" target="_blank">
+						<img
+							src="{{ url_for('static', filename='Assets/icons/icons8-instagram.png') }}"
+							alt="Facebook"
+							width="30"
+						/>
+					</a>
+				</div>
+				<div class="footer-copyright">
+					<p>&copy; <span id="year"></span> Obelisk Shipping</p>
+				</div>
+			</div>
+		</footer>
 		<script src="{{url_for('static',filename='js/index.js')}}"></script>
 	</body>
 </html>

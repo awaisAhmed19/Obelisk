@@ -1,5 +1,5 @@
 .section-3 {
-	max-width: 100%;
+	width: 100%;
 	min-height: max-content;
 	padding: 0 2rem;
 	display: flex;
@@ -10,8 +10,8 @@
 /* Styling for cards on larger screens (desktop) */
 .section-cards-left,
 .section-cards-right {
-	padding: 2rem 0;
-	width: 100%;
+	padding: 2rem;
+	max-width: 100%;
 	height: 50vh;
 	display: flex;
 	flex-direction: row;
@@ -34,21 +34,21 @@
 
 .section-cards-right img,
 .section-cards-left img {
-	width: 45vw;
+	width: 50%;
 	height: 100%;
 	object-fit: cover; /* Ensures the image fits without distortion */
 }
 
 @media only screen and (width> 1020px) and (width<2000px) {
 	.section-3 {
-		max-width: 100%;
+		width: 100%;
 		display: flex;
 		padding: 0;
 		flex-direction: column;
 	}
 	.section-cards-left img,
 	.section-cards-right img {
-		width: 50vw;
+		width: 50%;
 		height: auto;
 		object-fit: cover; /* Ensures images remain proportional */
 	}
@@ -66,7 +66,7 @@
 	.section-cards-right {
 		margin: 1rem 0;
 		padding: 2rem;
-		width: 100vw;
+		max-width: 100%;
 		height: auto;
 	}
 }
