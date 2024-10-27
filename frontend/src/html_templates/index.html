@@ -47,6 +47,10 @@
 			rel="stylesheet"
 			href="{{ url_for('static', filename='./styles/footer.css') }}"
 		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='./styles/aboutus.css') }}"
+		/>
 		<script src="https://unpkg.com/htmx.org@1.9.2"></script>
 	</head>
 	<body>
@@ -119,14 +123,7 @@
 							>
 						</li>
 						<li class="page-links-list">
-							<a
-								href="/support.html"
-								hx-get="support.html"
-								hx-target="#main_body"
-								hx-trigger="click"
-								hx-swap="innerHTML"
-								>Support</a
-							>
+							<a href="mailto:operation1@obeliskshipping.com">Support</a>
 						</li>
 					</ul>
 				</div>
@@ -142,121 +139,120 @@
 			</div>
 		</nav>
 		<main id="main_body">
-			<div class="hero-section">
+			<div class="aboutus-hero-section">
 				<div class="overlay"></div>
 				<img
-					class="hero-image"
-					src="{{url_for('static',filename='Assets/land_freight/hero_land_image.jpg')}}"
-					alt="airplane"
+					class="aboutus-hero-image"
+					src="{{url_for('static',filename='Assets/aboutus/aboutus.jpg')}}"
+					alt="ship"
 				/>
-				<div class="hero-service-container">
-					<h1>Land Freight</h1>
-					<p>
-						Obelisk Shipping is dedicated to providing safe and timely delivery
-						for your land freight shipments, backed by strong relationships with
-						reliable ground transportation providers.
-						<br role="presentation" />
-						Our experienced team manages every step, from booking to final
-						delivery, offering competitive rates and flexible transit options
-						tailored to your specific logistics needs.
-					</p>
+				<h1>About Us</h1>
+			</div>
+			<div class="aboutus-mission">
+				<h1>
+					Driving the future of logistics with reliable, efficient solutions
+					that connect businesses and move goods worldwide.
+				</h1>
+			</div>
 
-					<div class="service-button-container">
-						<a href="mailto:gm@obeliskshipping.com">Connect with experts</a>
-					</div>
-				</div>
+			<div class="aboutus-description">
+				<h1>Powering Smart Logistics Solutions</h1>
+				<p>
+					Obelisk Shipping offers a comprehensive suite of logistics services to
+					optimize supply chains and move goods with precision. With a
+					commitment to technology, flexible capacity, and trusted partnerships,
+					we connect shippers and carriers seamlessly. Our experienced team
+					leverages data-driven insights to streamline each stage of the
+					journey, adapting to the unique needs of every shipment. Whether by
+					land, sea, or air, we’re here to create efficiencies and provide a
+					tailored blend of personal service and advanced tools. At Obelisk
+					Shipping, we embrace complexity to help businesses operate smoothly
+					and intelligently every step of the way.
+				</p>
 			</div>
-			<div class="left-card">
-				<div class="card-content">
-					<h1>
-						Tailored land freight solutions to support your business growth
-					</h1>
+
+			<div class="aboutus-service-container">
+				<div class="aboutus-services">
+					<img
+						src="{{url_for('static',filename='Assets/aboutus/aboutus-connect.jpg')}}"
+						alt="ship"
+					/>
+					<h2>Connected</h2>
 					<p>
-						Obelisk Shipping provides a comprehensive range of land freight
-						services designed to meet the unique requirements of your business.
-						Our dedicated team and trusted carrier partnerships streamline your
-						land freight operations, managing each step from booking and pickups
-						to documentation and final delivery.
+						At Obelisk Shipping, we bridge the logistics industry gap through
+						advanced connectivity, enabling seamless interactions and real-time
+						solutions. Our technology and services bring together all
+						stakeholders, streamlining processes and enhancing collaboration for
+						a unified supply chain.
 					</p>
 				</div>
-				<img
-					src="{{url_for('static', filename='Assets/land_freight/truck_image1.jpg')}}"
-					alt="image1"
-				/>
-			</div>
-			<div class="column-container">
-				<h2 class="column-heading">
-					What sets our Land freight services apart
-				</h2>
-				<div class="column-section">
-					<div class="columns">
-						<div class="column-headings">
-							<img
-								src="{{url_for('static', filename='Assets/icons/icon-badge2.webp')}}"
-								alt="plane"
-							/>
-							<h3>Industry capacity</h3>
-						</div>
-						<p class="column-paragraph">
-							Our strong partnerships with a diverse network of ground carriers
-							offer you flexible capacity options, ensuring your freight moves
-							efficiently, even during busy periods. From standard deliveries to
-							expedited services, Obelisk Shipping has the carrier connections
-							to meet your specific land freight needs.
-						</p>
-					</div>
-					<div class="columns">
-						<div class="column-headings">
-							<img
-								src="{{url_for('static', filename='Assets/icons/Visibility-icon.svg')}}"
-								alt="laptop"
-							/>
-							<h3>Transparent visibility</h3>
-						</div>
-						<p class="column-paragraph">
-							Obelisk Shipping’s advanced tracking tools offer clear visibility
-							throughout the shipping process, allowing you to monitor your
-							cargo’s journey every step of the way. With reliable tracking,
-							streamlined documentation, and easy access to shipping
-							information, we help you make informed decisions to keep your
-							logistics running smoothly.
-						</p>
-					</div>
-					<div class="columns">
-						<div class="column-headings">
-							<img
-								src="{{url_for('static', filename='Assets/icons/Support-icon.svg')}}"
-								alt="Support"
-							/>
-							<h3>Expert support and consulting</h3>
-						</div>
-						<p class="column-paragraph">
-							Obelisk Shipping delivers expert support and tailored air freight
-							services designed to meet your unique business requirements.
-							Whether it’s handling oversized cargo or ensuring temperature
-							control for perishables, our team will craft a shipping plan that
-							ensures safe, timely delivery for your freight.
-						</p>
-					</div>
+				<div class="aboutus-services">
+					<img
+						src="{{url_for('static',filename='Assets/aboutus/aboutus-laptop.jpg')}}"
+						alt="ship"
+					/>
+					<h2>Agile</h2>
+					<p>
+						We embrace agility, adapting swiftly to the ever-changing demands of
+						the logistics industry. Our flexible solutions keep our partners
+						ahead of challenges, empowering them to seize new opportunities in a
+						dynamic market.
+					</p>
+				</div>
+				<div class="aboutus-services">
+					<img
+						src="{{url_for('static',filename='Assets/aboutus/aboutus-ship.jpg')}}"
+						alt="ship"
+					/>
+					<h2>Empowering</h2>
+					<p>
+						We’re committed to empowering our customers, equipping them with
+						tools and solutions that expand their capabilities. Our innovative
+						approach is designed to help businesses reach their full potential,
+						driving growth and operational excellence every step of the way.
+					</p>
 				</div>
 			</div>
-			<div class="end-section">
-				<div class="overlay"></div>
+
+			<div class="aboutus-values-conatiner">
+				<h1>Our Values</h1>
 				<img
-					class="end-image"
-					src="{{url_for('static',filename='Assets/land_freight/end-image.jpg')}}"
-					alt="airplane"
+					src="{{url_for('static',filename='Assets/aboutus/aboutus-ourvalues.jpg')}}"
+					alt="ship"
 				/>
-				<div class="end-container">
-					<h1>Land freight shipping made simple</h1>
+			</div>
+			<div class="aboutus-values">
+				<div class="values">
+					<h2>Customer Success</h2>
 					<p>
-						Contact us to partner with a skilled team of global transportation
-						<br role="presentation" />
-						professionals for your land freight needs.
+						We are dedicated to delivering positive, measurable outcomes for our
+						shippers, carriers, employees, and communities—every shipment, every
+						time.
 					</p>
-					<div class="button-end-container">
-						<a href="mailto:gm@obeliskshipping.com">Connect With expert</a>
-					</div>
+				</div>
+				<div class="values">
+					<h2>Purposeful Innovation</h2>
+					<p>
+						As forward-thinkers, we harness advanced technology and our
+						expertise to develop impactful, innovative solutions that benefit
+						everyone we serve.
+					</p>
+				</div>
+				<div class="values">
+					<h2>Stronger Together</h2>
+					<p>
+						We create collaborative spaces where everyone can bring their true
+						selves. Celebrating our differences makes us collectively stronger
+						and more resilient.
+					</p>
+				</div>
+				<div class="values">
+					<h2>Integrity First</h2>
+					<p>
+						Our actions are rooted in integrity and transparency. We’re
+						committed to doing the right thing, always, to build trust and
+						lasting relationships.
+					</p>
 				</div>
 			</div>
 		</main>

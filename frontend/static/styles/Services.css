@@ -69,9 +69,12 @@
 	font-size: 1.25rem;
 }
 .left-card img {
-	min-width: 100%;
+	min-width: 50%;
 	height: 100%;
 	object-fit: cover;
+}
+.card-content {
+	margin-right: 2rem;
 }
 .column-container {
 	padding: 0 2rem;

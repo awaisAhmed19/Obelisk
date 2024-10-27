@@ -1,249 +1,112 @@
-<div class="hero-container">
+<div class="hero-section">
 	<div class="overlay"></div>
-	<video
-		class="hero-video"
-		src="{{ url_for('static', filename='Assets/air_Frieght.mp4') }}"
-		autoplay
-		loop
-		muted
-	></video>
-	<video
-		class="hero-mobile-video"
-		src="{{ url_for('static', filename='Assets/ship_mobile.mp4') }}"
-		autoplay
-		loop
-		muted
-	></video>
-
-	<div class="content-container">
-		<h1 class="hero-text-title">
-			Enhance your
+	<img
+		class="hero-image"
+		src="{{url_for('static',filename='Assets/land_freight/hero_land_image.jpg')}}"
+		alt="airplane"
+	/>
+	<div class="hero-service-container">
+		<h1>Land Freight</h1>
+		<p>
+			Obelisk Shipping is dedicated to providing safe and timely delivery for
+			your land freight shipments, backed by strong relationships with reliable
+			ground transportation providers.
 			<br role="presentation" />
-			business with us
-		</h1>
-		<p class="hero-text-small">
-			Wield the power of cutting-edge technology and global logistics,
-			<br role="presentation" />
-			designed to deliver success for your business.
+			Our experienced team manages every step, from booking to final delivery,
+			offering competitive rates and flexible transit options tailored to your
+			specific logistics needs.
 		</p>
-		<div class="button-container">
-			<a href="mailto:gm@obeliskshipping.com" class="shipping-button"
-				>Ship With Us</a
-			>
+
+		<div class="service-button-container">
+			<a href="mailto:gm@obeliskshipping.com">Connect with experts</a>
 		</div>
 	</div>
 </div>
-<div class="section-1-container">
-	<div class="section1-text-container">
-		<h1 class="section1-text-title">
-			Obelisk Shipping, an end-to-end logistics solution enhancing supply chains
-			and movement of goods. Seamless operational efficiency for our clients.
-		</h1>
-		<p class="section1-text-small">
-			Our commitment to operational excellence drives us to build strong
-			partnerships and optimize logistics processes at every stage. With a focus
-			on reliability and efficiency, Obelisk Shipping empowers businesses to
-			navigate the complexities of global trade, ensuring timely delivery and
-			exceptional service. Whether you require air freight, sea freight, land
-			transport, or expert customs clearance, we are dedicated to facilitating
-			smooth supply chain operations that keep your business moving forward.
+<div class="left-card">
+	<div class="card-content">
+		<h1>Tailored land freight solutions to support your business growth</h1>
+		<p>
+			Obelisk Shipping provides a comprehensive range of land freight services
+			designed to meet the unique requirements of your business. Our dedicated
+			team and trusted carrier partnerships streamline your land freight
+			operations, managing each step from booking and pickups to documentation
+			and final delivery.
 		</p>
 	</div>
-	<div class="spacing"></div>
-	<div class="section1-description-container">
-		<span class="section1-descriptions">
-			<img
-				class="section1-icon"
-				src="{{url_for('static',filename='Assets/logistic-trolley.png')}}"
-			/>
-			<h2 class="section1-descriptions-heading">
-				Streamline logistics with real-time insights
-			</h2>
-			<p class="section1-descriptions-para">
-				Our network provides constant monitoring across air, sea, and land
-				routes, giving you up-to-the-minute data to optimize shipping, enhance
-				visibility, and make quick, informed decisions.
-			</p>
-		</span>
-		<span class="section1-descriptions">
-			<img
-				class="section1-icon"
-				src="{{url_for('static',filename='Assets/logistics-icon.png')}}"
-			/>
-			<h2 class="section1-descriptions-heading">
-				Maximize operational efficiency
-			</h2>
-			<p class="section1-descriptions-para">
-				Whether it’s managing capacity or streamlining costs, our comprehensive
-				solutions cover all your needs—be it air freight, sea freight, or ground
-				transportation—keeping your logistics on track.
-			</p>
-		</span>
-		<span class="section1-descriptions">
-			<img
-				class="section1-icon"
-				src="{{url_for('static',filename='Assets/tracking_.png')}}"
-			/>
-			<h2 class="section1-descriptions-heading">Leverage expert guidance</h2>
-			<p class="section1-descriptions-para">
-				With decades of logistics experience and deep expertise in global
-				shipping, our team is here to guide you through every step, ensuring
-				smooth operations and efficient customs clearance.
-			</p>
-		</span>
-	</div>
+	<img
+		src="{{url_for('static', filename='Assets/land_freight/truck_image1.jpg')}}"
+		alt="image1"
+	/>
 </div>
-
-<div class="spacing"></div>
-
-<div class="services-container">
-	<div class="service-card">
-		<img
-			src="{{ url_for('static', filename='Assets/airplane_thumbnail.jpg') }}"
-			alt="Airplane"
-		/>
-		<div class="service-card-text">
-			<h1>Air Freight</h1>
-			<p>
-				Our Air Freight services provide fast and flexible delivery, ensuring
-				your time-sensitive shipments arrive safely. With a robust logistics
-				network, we cater to both urgent documents and high-value goods. Trust
-				us for seamless transport solutions that keep your business moving.
+<div class="column-container">
+	<h2 class="column-heading">What sets our Land freight services apart</h2>
+	<div class="column-section">
+		<div class="columns">
+			<div class="column-headings">
+				<img
+					src="{{url_for('static', filename='Assets/icons/icon-badge2.webp')}}"
+					alt="plane"
+				/>
+				<h3>Industry capacity</h3>
+			</div>
+			<p class="column-paragraph">
+				Our strong partnerships with a diverse network of ground carriers offer
+				you flexible capacity options, ensuring your freight moves efficiently,
+				even during busy periods. From standard deliveries to expedited
+				services, Obelisk Shipping has the carrier connections to meet your
+				specific land freight needs.
 			</p>
-			<a
-				href="/air_freight.html"
-				hx-get="air_freight.html"
-				hx-target="#main_body"
-				hx-trigger="click"
-				hx-swap="innerHTML"
-				>Tell me more</a
-			>
 		</div>
-	</div>
-	<div class="service-card">
-		<img
-			src="{{ url_for('static', filename='Assets/ship_thumbnail.jpg') }}"
-			alt="ship"
-		/>
-		<div class="service-card-text">
-			<h1>Sea Freight</h1>
-			<p>
-				Optimize your logistics with our reliable Sea Freight options, perfect
-				for large shipments at competitive rates. We manage full container loads
-				(FCL) and less-than-container loads (LCL) with expert care. Count on us
-				to navigate customs efficiently and deliver your goods worldwide.
+		<div class="columns">
+			<div class="column-headings">
+				<img
+					src="{{url_for('static', filename='Assets/icons/Visibility-icon.svg')}}"
+					alt="laptop"
+				/>
+				<h3>Transparent visibility</h3>
+			</div>
+			<p class="column-paragraph">
+				Obelisk Shipping’s advanced tracking tools offer clear visibility
+				throughout the shipping process, allowing you to monitor your cargo’s
+				journey every step of the way. With reliable tracking, streamlined
+				documentation, and easy access to shipping information, we help you make
+				informed decisions to keep your logistics running smoothly.
 			</p>
-			<a
-				href="/sea_freight.html"
-				hx-get="sea_freight.html"
-				hx-target="#main_body"
-				hx-trigger="click"
-				hx-swap="innerHTML"
-				>Tell me more</a
-			>
 		</div>
-	</div>
-	<div class="service-card">
-		<img
-			src="{{ url_for('static', filename='Assets/land_thumbnail.jpg') }}"
-			alt="land_freight"
-		/>
-		<div class="service-card-text">
-			<h1>Land Freight</h1>
-			<p>
-				Enhance your supply chain with our comprehensive Land Freight services
-				for local and cross-border transport. Our experienced drivers ensure
-				timely and safe delivery for all cargo types. From road freight
-				solutions to last-mile delivery, we meet your logistics needs.
+		<div class="columns">
+			<div class="column-headings">
+				<img
+					src="{{url_for('static', filename='Assets/icons/Support-icon.svg')}}"
+					alt="Support"
+				/>
+				<h3>Expert support and consulting</h3>
+			</div>
+			<p class="column-paragraph">
+				Obelisk Shipping delivers expert support and tailored air freight
+				services designed to meet your unique business requirements. Whether
+				it’s handling oversized cargo or ensuring temperature control for
+				perishables, our team will craft a shipping plan that ensures safe,
+				timely delivery for your freight.
 			</p>
-			<a
-				href="/land_freight.html"
-				hx-get="land_freight.html"
-				hx-target="#main_body"
-				hx-trigger="click"
-				hx-swap="innerHTML"
-				>Tell me more</a
-			>
-		</div>
-	</div>
-	<div class="service-card">
-		<img
-			src="{{ url_for('static', filename='Assets/Custom_clearance.jpg') }}"
-			alt="custom_clearance"
-		/>
-		<div class="service-card-text">
-			<h1>Custom Clearance</h1>
-			<p>
-				Navigate international shipping with ease through our expert Custom
-				Clearance services. We handle all necessary documentation and ensure
-				compliance with regulations to minimize delays. Focus on your core
-				business while we ensure smooth customs processes for your shipments.
-			</p>
-			<a href="mailto=operation1@obeliskshipping.com">Tell me more</a>
 		</div>
 	</div>
 </div>
-
-<div class="spacing"></div>
-<div class="section-3">
-	<div class="section-cards-left">
-		<div class="card-text">
-			<h1>Seamless Logistics Solutions at Your Command</h1>
-			<p>
-				Effortlessly manage every stage of your shipment with Obelisk Shipping's
-				advanced logistics technology. From planning to final delivery, our
-				services ensure efficiency and precision with the help of cutting-edge
-				software and expert insights tailored to your unique business needs.
-			</p>
-		</div>
-		<img
-			src="{{url_for('static', filename='Assets/section3/oblisk1.jpg')}}"
-			alt="image1"
-		/>
-	</div>
-	<div class="section-cards-right">
-		<img
-			src="{{url_for('static', filename='Assets/section3/ship.jpg')}}"
-			alt="image2"
-		/>
-		<div class="card-text">
-			<h1>Optimize Your Shipping Strategies Across the Globe</h1>
-			<p>
-				At Obelisk Shipping, we provide customized freight solutions to suit
-				your business goals. Whether it's land, air, or sea, our network of
-				carriers and logistics experts are equipped to enhance your supply chain
-				while ensuring timely and cost-effective delivery.
-			</p>
-		</div>
-	</div>
-	<div class="section-cards-left">
-		<div class="card-text">
-			<h1>Reliable Freight Capacity for Every Business Need</h1>
-			<p>
-				With access to a broad network of global carriers, we guarantee flexible
-				and reliable capacity for any shipment size. Whether scaling up or down,
-				Obelisk Shipping ensures that your supply chain keeps pace with market
-				demands.
-			</p>
-		</div>
-		<img
-			src="{{url_for('static', filename='Assets/section3/trucks.jpg')}}"
-			alt="image3"
-		/>
-	</div>
-	<div class="section-cards-right">
-		<img
-			src="{{url_for('static', filename='Assets/section3/container.jpg')}}"
-			alt="image4"
-		/>
-		<div class="card-text">
-			<h1>Strategic Consulting by Industry Experts</h1>
-			<p>
-				Maximize your operational efficiency with Obelisk Shipping’s team of
-				supply chain specialists. Our consultants work hand-in-hand with your
-				business to optimize transportation planning, warehousing, procurement,
-				and overall logistics operations, allowing you to focus on growth.
-			</p>
+<div class="end-section">
+	<div class="overlay"></div>
+	<img
+		class="end-image"
+		src="{{url_for('static',filename='Assets/land_freight/end-image.jpg')}}"
+		alt="airplane"
+	/>
+	<div class="end-container">
+		<h1>Land freight shipping made simple</h1>
+		<p>
+			Contact us to partner with a skilled team of global transportation
+			<br role="presentation" />
+			professionals for your land freight needs.
+		</p>
+		<div class="button-end-container">
+			<a href="mailto:gm@obeliskshipping.com">Connect With expert</a>
 		</div>
 	</div>
 </div>

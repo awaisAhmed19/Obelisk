@@ -1,0 +1,235 @@
+.aboutus-hero-section {
+	width: 100vw;
+	height: 85vh;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.aboutus-hero-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.aboutus-hero-section h1 {
+	position: absolute;
+	margin: 0.625rem 0;
+	font-size: 3rem;
+	z-index: 5;
+	color: whitesmoke;
+	padding: 0 2rem;
+}
+
+.aboutus-mission h1 {
+	margin: 3rem 0;
+	padding: 0 2rem;
+}
+.aboutus-description {
+	margin: 3rem 0;
+	padding: 0 2rem;
+}
+.aboutus-service-container {
+	margin: 3rem 0;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* flex-wrap: wrap;  Allows items to wrap on smaller screens 
+	gap: 1rem; */
+}
+
+.aboutus-services {
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	width: 100%;
+	max-width: 45%; /* Sets a maximum width for larger screens */
+}
+
+.aboutus-services img {
+	width: 100%;
+	height: auto; /* Maintains aspect ratio */
+	object-fit: contain;
+}
+.aboutus-values-conatiner h1 {
+	margin: 3rem 0;
+	padding: 0 2rem;
+}
+
+.aboutus-values-conatiner img {
+	margin: 0;
+	padding: 0;
+}
+.aboutus-values-conatiner img {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto; /* Maintains aspect ratio */
+	object-fit: contain;
+}
+.aboutus-values {
+	margin-bottom: 3rem;
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.values {
+	padding: 0 1rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1020px) {
+	.aboutus-hero-section h1 {
+		position: absolute;
+		margin: 0.625rem 0;
+		font-size: 2rem;
+		z-index: 5;
+		padding: 0 1rem;
+	}
+
+	.aboutus-mission h1 {
+		font-size: xx-large;
+		margin: 2rem 0;
+		padding: 0 1rem;
+	}
+	.aboutus-description {
+		margin: 2rem 0;
+		padding: 0 1rem;
+	}
+	.aboutus-description h1 {
+		font-size: xx-large;
+	}
+	.aboutus-service-container {
+		margin: 2rem 0;
+		padding: 0 0.5rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/* flex-wrap: wrap;  Allows items to wrap on smaller screens 
+        gap: 1rem; */
+	}
+
+	.aboutus-services {
+		padding: 2rem;
+		margin: 1rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		max-width: 100%;
+		/* max-width: 50%; Sets a maximum width for larger screens */
+	}
+
+	.aboutus-services img {
+		width: 100%;
+		height: auto; /* Maintains aspect ratio */
+		object-fit: contain;
+	}
+	.aboutus-values-conatiner {
+		margin: 2rem 0;
+		padding: 0 1rem;
+	}
+
+	.aboutus-values-conatiner img {
+		width: 100%;
+		height: auto; /* Maintains aspect ratio */
+		object-fit: contain;
+	}
+	.aboutus-values {
+		margin-bottom: 2rem;
+		padding: 0 0.5rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+	.values {
+		padding: 0 0.5rem;
+	}
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+	.aboutus-hero-section h1 {
+		position: absolute;
+		margin: 0.625rem 0;
+		font-size: 2rem;
+		z-index: 5;
+		padding: 0 1rem;
+	}
+
+	.aboutus-mission h1 {
+		font-size: xx-large;
+		margin: 1rem 0;
+		padding: 0 1rem;
+	}
+	.aboutus-description {
+		margin: 1rem 0;
+		padding: 0 1rem;
+	}
+	.aboutus-description h1 {
+		font-size: xx-large;
+	}
+	.aboutus-service-container {
+		margin: 1rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		/* flex-wrap: wrap;  Allows items to wrap on smaller screens 
+        gap: 1rem; */
+	}
+
+	.aboutus-services {
+		padding: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		max-width: 100%;
+		/* max-width: 50%; Sets a maximum width for larger screens */
+	}
+
+	.aboutus-services img {
+		min-width: 50%;
+		height: auto; /* Maintains aspect ratio */
+		object-fit: cover;
+	}
+	.aboutus-services h2 {
+		margin: 1rem 0;
+	}
+	.aboutus-services p {
+		margin-top: 0;
+	}
+	.aboutus-values-conatiner {
+		margin: 0;
+		padding: 0;
+	}
+	.aboutus-values-conatiner h1 {
+		margin: 1rem 0;
+		padding: 0 1rem;
+	}
+
+	.aboutus-values-conatiner img {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%; /* Maintains aspect ratio */
+		object-fit: contain;
+	}
+	.aboutus-values {
+		margin-bottom: 2rem;
+		padding: 0 0.5rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.values {
+		padding: 0 0.5rem;
+	}
+}

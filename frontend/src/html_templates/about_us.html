@@ -1,60 +1,362 @@
-<div class="hero-section">
+<div class="aboutus-hero-section">
 	<div class="overlay"></div>
 	<img
-		class="hero-image"
-		src="{{url_for('static',filename='Assets/air_freight/hero_air_image.jpeg')}}"
-		alt="airplane"
+		class="aboutus-hero-image"
+		src="{{url_for('static',filename='Assets/aboutus/aboutus.jpg')}}"
+		alt="ship"
 	/>
-	<div class="hero-container">
-		<h1>About Us</h1>
-	</div>
+	<h1>About Us</h1>
 </div>
 <div class="aboutus-misson">
-	<h1></h1>
+	<h1>
+		Driving the future of logistics with reliable, efficient solutions that
+		connect businesses and move goods worldwide.
+	</h1>
 </div>
 
 <div class="aboutus-description">
-	<h1></h1>
-	<p></p>
+	<h1>Powering Smart Logistics Solutions</h1>
+	<p>
+		Obelisk Shipping offers a comprehensive suite of logistics services to
+		optimize supply chains and move goods with precision. With a commitment to
+		technology, flexible capacity, and trusted partnerships, we connect shippers
+		and carriers seamlessly. Our experienced team leverages data-driven insights
+		to streamline each stage of the journey, adapting to the unique needs of
+		every shipment. Whether by land, sea, or air, we’re here to create
+		efficiencies and provide a tailored blend of personal service and advanced
+		tools. At Obelisk Shipping, we embrace complexity to help businesses operate
+		smoothly and intelligently every step of the way.
+	</p>
 </div>
 
 <div class="aboutus-service-container">
-	<div class="services">
-		<img src="" alt="" />
-		<h4></h4>
-		<p></p>
+	<div class="aboutus-services">
+		<img
+			src="{{url_for('static',filename='Assets/aboutus/aboutus-connect.jpg')}}"
+			alt="ship"
+		/>
+		<h4>Connected</h4>
+		<p>
+			At Obelisk Shipping, we bridge the logistics industry gap through advanced
+			connectivity, enabling seamless interactions and real-time solutions. Our
+			technology and services bring together all stakeholders, streamlining
+			processes and enhancing collaboration for a unified supply chain.
+		</p>
+	</div>
+	<div class="aboutus-services">
+		<img
+			src="{{url_for('static',filename='Assets/aboutus/aboutus-laptop.jpg')}}"
+			alt="ship"
+		/>
+		<h4>Agile</h4>
+		<p>
+			We embrace agility, adapting swiftly to the ever-changing demands of the
+			logistics industry. Our flexible solutions keep our partners ahead of
+			challenges, empowering them to seize new opportunities in a dynamic
+			market.
+		</p>
 	</div>
 	<div class="services">
-		<img src="" alt="" />
-		<h4></h4>
-		<p></p>
-	</div>
-	<div class="services">
-		<img src="" alt="" />
-		<h4></h4>
-		<p></p>
+		<img
+			src="{{url_for('static',filename='Assets/aboutus/aboutus-ship.jpg')}}"
+			alt="ship"
+		/>
+		<h4>Empowering</h4>
+		<p>
+			We’re committed to empowering our customers, equipping them with tools and
+			solutions that expand their capabilities. Our innovative approach is
+			designed to help businesses reach their full potential, driving growth and
+			operational excellence every step of the way.
+		</p>
 	</div>
 </div>
 
 <div class="aboutus-values-conatiner">
-	<h1></h1>
-	<img src="" alt="" />
+	<h1>Our Values</h1>
+	<img
+		src="{{url_for('static',filename='Assets/aboutus/aboutus-ourvalues.jpg')}}"
+		alt="ship"
+	/>
 	<div class="aboutus-values">
 		<div class="values">
-			<h2></h2>
-			<p></p>
+			<h2>Customer Success</h2>
+			<p>
+				We are dedicated to delivering positive, measurable outcomes for our
+				shippers, carriers, employees, and communities—every shipment, every
+				time.
+			</p>
 		</div>
 		<div class="values">
-			<h2></h2>
-			<p></p>
+			<h2>Purposeful Innovation</h2>
+			<p>
+				As forward-thinkers, we harness advanced technology and our expertise to
+				develop impactful, innovative solutions that benefit everyone we serve.
+			</p>
 		</div>
 		<div class="values">
-			<h2></h2>
-			<p></p>
+			<h2>Stronger Together</h2>
+			<p>
+				We create collaborative spaces where everyone can bring their true
+				selves. Celebrating our differences makes us collectively stronger and
+				more resilient.
+			</p>
 		</div>
 		<div class="values">
-			<h2></h2>
-			<p></p>
+			<h2>Integrity First</h2>
+			<p>
+				Our actions are rooted in integrity and transparency. We’re committed to
+				doing the right thing, always, to build trust and lasting relationships.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="hero-container">
+	<div class="overlay"></div>
+	<video
+		class="hero-video"
+		src="{{ url_for('static', filename='Assets/air_Frieght.mp4') }}"
+		autoplay
+		loop
+		muted
+	></video>
+	<video
+		class="hero-mobile-video"
+		src="{{ url_for('static', filename='Assets/ship_mobile.mp4') }}"
+		autoplay
+		loop
+		muted
+	></video>
+
+	<div class="content-container">
+		<h1 class="hero-text-title">
+			Enhance your
+			<br role="presentation" />
+			business with us
+		</h1>
+		<p class="hero-text-small">
+			Wield the power of cutting-edge technology and global logistics,
+			<br role="presentation" />
+			designed to deliver success for your business.
+		</p>
+		<div class="button-container">
+			<a href="mailto:gm@obeliskshipping.com" class="shipping-button"
+				>Ship With Us</a
+			>
+		</div>
+	</div>
+</div>
+<div class="section-1-container">
+	<div class="section1-text-container">
+		<h1 class="section1-text-title">
+			Obelisk Shipping, an end-to-end logistics solution enhancing supply chains
+			and movement of goods. Seamless operational efficiency for our clients.
+		</h1>
+		<p class="section1-text-small">
+			Our commitment to operational excellence drives us to build strong
+			partnerships and optimize logistics processes at every stage. With a focus
+			on reliability and efficiency, Obelisk Shipping empowers businesses to
+			navigate the complexities of global trade, ensuring timely delivery and
+			exceptional service. Whether you require air freight, sea freight, land
+			transport, or expert customs clearance, we are dedicated to facilitating
+			smooth supply chain operations that keep your business moving forward.
+		</p>
+	</div>
+	<div class="spacing"></div>
+	<div class="section1-description-container">
+		<span class="section1-descriptions">
+			<img
+				class="section1-icon"
+				src="{{url_for('static',filename='Assets/logistic-trolley.png')}}"
+			/>
+			<h2 class="section1-descriptions-heading">
+				Streamline logistics with real-time insights
+			</h2>
+			<p class="section1-descriptions-para">
+				Our network provides constant monitoring across air, sea, and land
+				routes, giving you up-to-the-minute data to optimize shipping, enhance
+				visibility, and make quick, informed decisions.
+			</p>
+		</span>
+		<span class="section1-descriptions">
+			<img
+				class="section1-icon"
+				src="{{url_for('static',filename='Assets/logistics-icon.png')}}"
+			/>
+			<h2 class="section1-descriptions-heading">
+				Maximize operational efficiency
+			</h2>
+			<p class="section1-descriptions-para">
+				Whether it’s managing capacity or streamlining costs, our comprehensive
+				solutions cover all your needs—be it air freight, sea freight, or ground
+				transportation—keeping your logistics on track.
+			</p>
+		</span>
+		<span class="section1-descriptions">
+			<img
+				class="section1-icon"
+				src="{{url_for('static',filename='Assets/tracking_.png')}}"
+			/>
+			<h2 class="section1-descriptions-heading">Leverage expert guidance</h2>
+			<p class="section1-descriptions-para">
+				With decades of logistics experience and deep expertise in global
+				shipping, our team is here to guide you through every step, ensuring
+				smooth operations and efficient customs clearance.
+			</p>
+		</span>
+	</div>
+</div>
+
+<div class="spacing"></div>
+
+<div class="services-container">
+	<div class="service-card">
+		<img
+			src="{{ url_for('static', filename='Assets/airplane_thumbnail.jpg') }}"
+			alt="Airplane"
+		/>
+		<div class="service-card-text">
+			<h1>Air Freight</h1>
+			<p>
+				Our Air Freight services provide fast and flexible delivery, ensuring
+				your time-sensitive shipments arrive safely. With a robust logistics
+				network, we cater to both urgent documents and high-value goods. Trust
+				us for seamless transport solutions that keep your business moving.
+			</p>
+			<a
+				href="/air_freight.html"
+				hx-get="air_freight.html"
+				hx-target="#main_body"
+				hx-trigger="click"
+				hx-swap="innerHTML"
+				>Tell me more</a
+			>
+		</div>
+	</div>
+	<div class="service-card">
+		<img
+			src="{{ url_for('static', filename='Assets/ship_thumbnail.jpg') }}"
+			alt="ship"
+		/>
+		<div class="service-card-text">
+			<h1>Sea Freight</h1>
+			<p>
+				Optimize your logistics with our reliable Sea Freight options, perfect
+				for large shipments at competitive rates. We manage full container loads
+				(FCL) and less-than-container loads (LCL) with expert care. Count on us
+				to navigate customs efficiently and deliver your goods worldwide.
+			</p>
+			<a
+				href="/sea_freight.html"
+				hx-get="sea_freight.html"
+				hx-target="#main_body"
+				hx-trigger="click"
+				hx-swap="innerHTML"
+				>Tell me more</a
+			>
+		</div>
+	</div>
+	<div class="service-card">
+		<img
+			src="{{ url_for('static', filename='Assets/land_thumbnail.jpg') }}"
+			alt="land_freight"
+		/>
+		<div class="service-card-text">
+			<h1>Land Freight</h1>
+			<p>
+				Enhance your supply chain with our comprehensive Land Freight services
+				for local and cross-border transport. Our experienced drivers ensure
+				timely and safe delivery for all cargo types. From road freight
+				solutions to last-mile delivery, we meet your logistics needs.
+			</p>
+			<a
+				href="/land_freight.html"
+				hx-get="land_freight.html"
+				hx-target="#main_body"
+				hx-trigger="click"
+				hx-swap="innerHTML"
+				>Tell me more</a
+			>
+		</div>
+	</div>
+	<div class="service-card">
+		<img
+			src="{{ url_for('static', filename='Assets/Custom_clearance.jpg') }}"
+			alt="custom_clearance"
+		/>
+		<div class="service-card-text">
+			<h1>Custom Clearance</h1>
+			<p>
+				Navigate international shipping with ease through our expert Custom
+				Clearance services. We handle all necessary documentation and ensure
+				compliance with regulations to minimize delays. Focus on your core
+				business while we ensure smooth customs processes for your shipments.
+			</p>
+			<a href="mailto=operation1@obeliskshipping.com">Tell me more</a>
+		</div>
+	</div>
+</div>
+
+<div class="spacing"></div>
+<div class="section-3">
+	<div class="section-cards-left">
+		<div class="card-text">
+			<h1>Seamless Logistics Solutions at Your Command</h1>
+			<p>
+				Effortlessly manage every stage of your shipment with Obelisk Shipping's
+				advanced logistics technology. From planning to final delivery, our
+				services ensure efficiency and precision with the help of cutting-edge
+				software and expert insights tailored to your unique business needs.
+			</p>
+		</div>
+		<img
+			src="{{url_for('static', filename='Assets/section3/oblisk1.jpg')}}"
+			alt="image1"
+		/>
+	</div>
+	<div class="section-cards-right">
+		<img
+			src="{{url_for('static', filename='Assets/section3/ship.jpg')}}"
+			alt="image2"
+		/>
+		<div class="card-text">
+			<h1>Optimize Your Shipping Strategies Across the Globe</h1>
+			<p>
+				At Obelisk Shipping, we provide customized freight solutions to suit
+				your business goals. Whether it's land, air, or sea, our network of
+				carriers and logistics experts are equipped to enhance your supply chain
+				while ensuring timely and cost-effective delivery.
+			</p>
+		</div>
+	</div>
+	<div class="section-cards-left">
+		<div class="card-text">
+			<h1>Reliable Freight Capacity for Every Business Need</h1>
+			<p>
+				With access to a broad network of global carriers, we guarantee flexible
+				and reliable capacity for any shipment size. Whether scaling up or down,
+				Obelisk Shipping ensures that your supply chain keeps pace with market
+				demands.
+			</p>
+		</div>
+		<img
+			src="{{url_for('static', filename='Assets/section3/trucks.jpg')}}"
+			alt="image3"
+		/>
+	</div>
+	<div class="section-cards-right">
+		<img
+			src="{{url_for('static', filename='Assets/section3/container.jpg')}}"
+			alt="image4"
+		/>
+		<div class="card-text">
+			<h1>Strategic Consulting by Industry Experts</h1>
+			<p>
+				Maximize your operational efficiency with Obelisk Shipping’s team of
+				supply chain specialists. Our consultants work hand-in-hand with your
+				business to optimize transportation planning, warehousing, procurement,
+				and overall logistics operations, allowing you to focus on growth.
+			</p>
 		</div>
 	</div>
 </div>
